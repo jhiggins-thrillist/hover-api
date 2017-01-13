@@ -227,6 +227,7 @@ module.exports = function (username, password) {
         createARecord: createARecord,
         createMXRecord: createMXRecord,
         updateDomainDns: updateDomainDns,
+        updateNameservers: updateNameservers,
         removeDns: removeDns
     };
 };
