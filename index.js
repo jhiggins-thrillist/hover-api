@@ -120,6 +120,13 @@ module.exports = function (username, password) {
         _hoverRequest('PUT', '/dns/' + dns, body, cb);
     }
 
+    function updateNameServers (dns, nameservers, cb) {
+        var body = {
+            nameservers: nameservers
+        };
+        _hoverRequest('PUT', '/domains/' + dns, body, cb);
+    }
+
     /**
      * Remove an existing dns record
      *
