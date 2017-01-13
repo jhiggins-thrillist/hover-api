@@ -120,7 +120,7 @@ module.exports = function (username, password) {
         _hoverRequest('PUT', '/dns/' + dns, body, cb);
     }
 
-    function updateNameServers (dns, nameservers, cb) {
+    function updateNameservers (dns, nameservers, cb) {
         var body = {
             nameservers: nameservers
         };
